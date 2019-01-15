@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
+<addon id="plugin.program.T2K" name="T2K Wizard" version="1.1.4" provider-name="T2K">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">T2K</summary>
+    <description lang="en">T2K allows you to get access to the latest T2K Custom Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="repository.Fladnag" name="Fladnag Repo" version="9.9.9" provider-name="Fladnag">
 	<extension point="xbmc.addon.repository" name="Fladnag Repository">
 		<info compressed="false">https://raw.githubusercontent.com/djwayne1985/Fladnag-Repo/master/zips/addons.xml</info>
